@@ -1,0 +1,16 @@
+{% for product in cart_items %}
+<div class="col-lg-4">
+    <div class="card"
+        style="width: 18rem;box-shadow: 15px 8px 9px #333131;margin-top: 8px;display:flex;border-radius: 10px;">
+        <img src="{{product.image_url}}" class="card-img-top" alt="..."
+            style="max-height: 200px;height: 100%;">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">Rs.{{product.price}}</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
+
+
+</div>
+{% end for %}
